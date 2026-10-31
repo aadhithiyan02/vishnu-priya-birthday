@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff4f7">
+  <title>Happy Birthday, Vishnu Priya Sri! 💗</title>
+  <style>
+    :root {
+      --ink: #49364d;
+      --muted: #876f86;
+      --pink: #ef91ad;
+      --rose: #f7c5d2;
+      --lilac: #c8b8ed;
+      --cream: #fff9f5;
+      --card: #ffffffd9
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(145deg, #fff9f5, #fff0f4 48%, #f3efff);
+      overflow-x: hidden
+    }
+
+    button {
+      font: inherit
+    }
+
+    .hero {
+      min-height: 95vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 70px 20px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero:before,
+    .hero:after {
+      content: "✿";
+      position: absolute;
+      color: #e9a6bc;
+      opacity: .3;
+      font-size: 9rem
+    }
+
+    .hero:before {
+      left: 4%;
+      top: 8%;
+      transform: rotate(-20deg)
+    }
+
+    .hero:after {
+      right: 5%;
+      bottom: 8%;
+      transform: rotate(20deg)
+    }
+
+    .hero-inner {
+      max-width: 790px;
+      position: relative;
+      z-index: 1
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: .76rem;
+      font-weight: 800;
+      color: #a477a1
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(3.1rem, 10vw, 7rem);
+      line-height: .98;
+      font-weight: 500;
+      margin: 20px 0;
+      color: #654c70
+    }
+
+    h1 span {
+      color: #e783a2
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2.6vw, 1.25rem);
+      line-height: 1.8;
+      color: var(--muted);
+      max-width: 630px;
+      margin: 0 auto 25px
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #f0cbd8;
+      background: #ffffffa8;
+      border-radius: 999px;
+      padding: 10px 16px;
+      color: #986b8d;
+      font-size: .9rem
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 21px;
+      background: #a77fb1;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 8px 22px #a77fb133;
+      transition: .2s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn.secondary {
+      background: #e98da9
+    }
+
+    main {
+      width: min(1050px, 92%);
+      margin: auto;
+      padding-bottom: 60px
+    }
+
+    section {
+      margin: 35px 0 75px
+    }
+
+    .section-title {
+      text-align: center;
+      font: 500 clamp(2rem, 5vw, 3rem) Georgia, serif;
+      margin: 0 0 10px
+    }
+
+    .section-note {
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 650px;
+      margin: 0 auto 28px
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(65px, 110px));
+      justify-content: center;
+      gap: 12px;
+      margin: 28px auto
+    }
+
+    .timebox {
+      background: var(--card);
+      border: 1px solid #fff;
+      border-radius: 20px;
+      padding: 18px 8px;
+      text-align: center;
+      box-shadow: 0 12px 35px #785c7b0c
+    }
+
+    .timebox strong {
+      display: block;
+      font: bold clamp(1.6rem, 5vw, 2.5rem) Georgia, serif;
+      color: #bd789b
+    }
+
+    .timebox span {
+      font-size: .75rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px
+    }
+
+    .photo {
+      min-height: 250px;
+      border: 2px dashed #d9b9cf;
+      border-radius: 22px;
+      background: #ffffffa8;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 15px;
+      color: #947c94;
+      overflow: hidden
+    }
+
+    .photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px
+    }
+
+    .photo b {
+      display: block;
+      color: #795e80;
+      margin-bottom: 7px
+    }
+
+    .message {
+      max-width: 780px;
+      margin: auto;
+      background: var(--card);
+      border: 1px solid white;
+      border-radius: 28px;
+      padding: clamp(25px, 5vw, 48px);
+      text-align: center;
+      line-height: 1.95;
+      font-size: 1.1rem;
+      box-shadow: 0 18px 55px #73577912
+    }
+
+    .signature {
+      font: 1.6rem Georgia, serif;
+      color: #bd789b;
+      margin-top: 22px
+    }
+
+    .timeline {
+      max-width: 750px;
+      margin: auto;
+      position: relative
+    }
+
+    .timeline:before {
+      content: "";
+      position: absolute;
+      left: 17px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: #e7bfd1
+    }
+
+    .memory {
+      position: relative;
+      padding: 0 0 28px 55px
+    }
+
+    .memory:before {
+      content: "♡";
+      position: absolute;
+      left: 5px;
+      top: 0;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      background: #f8dce5;
+      color: #a96e91;
+      display: grid;
+      place-items: center
+    }
+
+    .memory h3 {
+      margin: 0 0 5px;
+      color: #805f83
+    }
+
+    .memory p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7
+    }
+
+    .reveal-wrap {
+      text-align: center
+    }
+
+    .secret {
+      display: none;
+      max-width: 700px;
+      margin: 22px auto 0;
+      background: #fff9f4;
+      border: 1px solid #f5d7e0;
+      border-radius: 22px;
+      padding: 25px;
+      line-height: 1.8
+    }
+
+    .secret.show {
+      display: block;
+      animation: pop .5s ease
+    }
+
+    @keyframes pop {
+      from {
+        opacity: 0;
+        transform: translateY(10px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .music-control {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 5;
+      border: 1px solid #f1d0dd;
+      background: #fffafc;
+      color: #8e668a;
+      border-radius: 999px;
+      padding: 12px 16px;
+      box-shadow: 0 8px 24px #654c7020;
+      cursor: pointer
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 15px 45px;
+      color: #987f96;
+      font-size: .9rem
+    }
+
+    #fireworks {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 8
+    }
+
+    @media(max-width:700px) {
+      .gallery {
+        grid-template-columns: 1fr
+      }
+
+      .photo {
+        min-height: 200px
+      }
+
+      .photo img {
+        height: 220px
+      }
+
+      .hero {
+        min-height: 85vh
+      }
+
+      .hero:before,
+      .hero:after {
+        font-size: 5rem
+      }
+
+      .countdown {
+        gap: 7px
+      }
+
+      .timebox {
+        padding: 14px 4px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="fireworks"></canvas>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">A little corner of the internet, made for you</div>
+      <h1>Happy Birthday,<br><span>Vishnu Priya Sri!</span> 🎂</h1>
+      <p class="subtitle">To my favourite human and best friend — today deserves extra sparkle because the world got
+        you. Here's a little collection of love, laughter and memories, made just for you. 💗</p>
+      <div class="pill">🌷 Your day. Your magic. Your moment.</div>
+      <p style="margin-top:28px"><button class="btn secondary" onclick="launchFireworks()">Celebrate you ✨</button></p>
+      <p style="color:#a88ba4;font-size:.85rem">Scroll down — there's more waiting for you ↓</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="countdown-section">
+      <h2 class="section-title">The countdown to your day ⏳</h2>
+      <p class="section-note" id="countdown-caption">Counting down to a day worth celebrating.</p>
+      <div class="countdown">
+        <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
+        <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
+        <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Our little memory lane 📸</h2>
+      <p class="section-note">A few snapshots of the moments that deserve a permanent place here. Replace these with
+        your photos.</p>
+      <div class="gallery">
+        <div class="photo">
+          <img src="images/photo1.jpg" alt="Our memory 1">
+        </div>
+
+        <div class="photo">
+          <img src="images/photo2.jpg" alt="Our memory 2">
+        </div>
+
+        <div class="photo">
+          <img src="images/photo3.jpg" alt="Our memory 3">
+        </div>
+        <div class="photo">
+          <img src="images/photo4.jpeg" alt="Our memory 4">
+        </div>
+        <div class="photo">
+          <img src="images/photo5.jpeg" alt="Our memory 5">
+        </div>
+        <div class="photo">
+          <img src="images/photo6.jpeg" alt="Our memory 6">
+        </div>
+        <div class="photo">
+          <img src="images/photo7.jpeg" alt="Our memory 7">
+        </div>
+         <div class="photo">
+          <img src="images/photo8.jpeg" alt="Our memory 8">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">The story so far 💞</h2>
+      <p class="section-note">Edit these little chapters with real moments from your friendship.</p>
+      <div class="timeline">
+        <article class="memory">
+          <h3>🌱 The beginning</h3>
+          <p>[Add how and when your friendship began.]</p>
+        </article>
+        <article class="memory">
+          <h3>😂 The laugh-until-we-cry moment</h3>
+          <p>[Add an unforgettable funny memory or inside joke.]</p>
+        </article>
+        <article class="memory">
+          <h3>🫶 The moment I knew</h3>
+          <p>[Add a time your best friend was there for you.]</p>
+        </article>
+        <article class="memory">
+          <h3>🌈 More memories to come</h3>
+          <p>Here's to all the places we'll go, stories we'll collect and laughs still waiting for us.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">A note from my heart 💌</h2>
+      <div class="message">
+        Happy birthday, Vishnu Priya Sri! I hope this year brings you peaceful days, exciting adventures, good health
+        and all the happiness you deserve.
+        Thank you for being you — for the conversations, the laughter, the little things and the memories that make
+        ordinary days special.
+        Never forget how loved and appreciated you are. Keep shining in your own beautiful way. The world is better with
+        you in it. 💗
+        <div class="signature">With lots of love ♡<br>Vishnu and Aadhi</div>
+      </div>
+    </section>
+
+    <section class="reveal-wrap">
+      <h2 class="section-title">One last little surprise 🎁</h2>
+      <p class="section-note">There's a secret message waiting. Only open it when you're ready!</p>
+      <button class="btn" onclick="revealSecret()">Tap to reveal your secret message 💌</button>
+      <div class="secret" id="secret">
+        <div style="font-size:2rem">💗🌷✨</div>
+        No matter how busy life gets or how far apart we are, you'll always have a friend cheering for you. This page is
+        just a tiny reminder that you mean a lot. Here's to another year of being wonderfully, unapologetically you!
+      </div>
+    </section>
+  </main>
+  <footer>Made with ♡ for Vishnu Priya Sri · [Birthday year]</footer>
+
+  <button class="music-control" id="musicButton" onclick="toggleMusic()">♫ Play music</button>
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="audio/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    // PERSONALISE THIS DATE: use YYYY-MM-DD, for example "2026-11-15"
+    const BIRTHDAY_DATE = "2026-11-01";
+
+    function updateCountdown() {
+      const caption = document.getElementById("countdown-caption");
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(BIRTHDAY_DATE)) {
+        caption.textContent = "Set the birthday date in index.html to activate the countdown.";
+        ["days", "hours", "minutes", "seconds"].forEach(id => document.getElementById(id).textContent = "--");
+        return;
+      }
+      const now = new Date(), parts = BIRTHDAY_DATE.split("-").map(Number);
+      let target = new Date(now.getFullYear(), parts[1] - 1, parts[2]);
+      if (target < new Date(now.getFullYear(), now.getMonth(), now.getDate())) target.setFullYear(now.getFullYear() + 1);
+      const diff = target - now;
+      if (diff <= 0) { caption.textContent = "It's your birthday! Have the most magical day! 🎂"; return; }
+      caption.textContent = "Counting down to " + target.toLocaleDateString(undefined, { day: "numeric", month: "long" }) + "!";
+      document.getElementById("days").textContent = Math.floor(diff / 86400000);
+      document.getElementById("hours").textContent = Math.floor(diff / 3600000) % 24;
+      document.getElementById("minutes").textContent = Math.floor(diff / 60000) % 60;
+      document.getElementById("seconds").textContent = Math.floor(diff / 1000) % 60;
+    }
+    updateCountdown(); setInterval(updateCountdown, 1000);
+
+    function revealSecret() { document.getElementById("secret").classList.toggle("show") }
+    const music = document.getElementById("birthdayMusic"), musicButton = document.getElementById("musicButton");
+    async function toggleMusic() {
+      if (music.paused) {
+        try { await music.play(); musicButton.textContent = "♫ Pause music" }
+        catch (e) { alert("Add your music file at audio/birthday-song.mp3 first. Use music you have permission to share."); }
+      } else { music.pause(); musicButton.textContent = "♫ Play music" }
+    }
+
+    // Lightweight canvas fireworks; starts on button press.
+    const canvas = document.getElementById("fireworks"), ctx = canvas.getContext("2d"); let particles = [], animating = false;
+    function resizeCanvas() { canvas.width = innerWidth * devicePixelRatio; canvas.height = innerHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0) }
+    addEventListener("resize", resizeCanvas); resizeCanvas();
+    function launchFireworks() {
+      const colors = ["#f18eae", "#b9a4e8", "#f6c77c", "#9ed8c7", "#ffffff"];
+      for (let burst = 0; burst < 5; burst++) {
+        const x = innerWidth * (.18 + Math.random() * .64), y = innerHeight * (.15 + Math.random() * .45);
+        for (let i = 0; i < 55; i++) { const a = Math.PI * 2 * i / 55, s = 1.5 + Math.random() * 4; particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, life: 70 + Math.random() * 25, color: colors[Math.floor(Math.random() * colors.length)] }) }
+      }
+      if (!animating) { animating = true; requestAnimationFrame(drawFireworks) }
+    }
+    function drawFireworks() {
+      ctx.clearRect(0, 0, innerWidth, innerHeight);
+      particles = particles.filter(p => p.life > 0);
+      for (const p of particles) { ctx.globalAlpha = Math.min(1, p.life / 35); ctx.fillStyle = p.color; ctx.beginPath(); ctx.arc(p.x, p.y, 2.2, 0, Math.PI * 2); ctx.fill(); p.x += p.vx; p.y += p.vy; p.vy += .035; p.vx *= .99; p.vy *= .99; p.life-- }
+      ctx.globalAlpha = 1;
+      if (particles.length) { requestAnimationFrame(drawFireworks) } else { animating = false; ctx.clearRect(0, 0, innerWidth, innerHeight) }
+    }
+  </script>
+</body>
+
+</html>
